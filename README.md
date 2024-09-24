@@ -16,7 +16,7 @@ https://mum0-my.sharepoint.com/:p:/g/personal/mmostafa_miu_edu/EY2ie682y4lBtGOVI
 
 
 **Steps:**
-1- Kafka
+### 1- Kafka
     **Download Kafka**: 
 
         - Go to the [Apache Kafka downloads page](https://kafka.apache.org/downloads) and copy the download link for the latest binary. 
@@ -36,7 +36,7 @@ https://mum0-my.sharepoint.com/:p:/g/personal/mmostafa_miu_edu/EY2ie682y4lBtGOVI
      tar -xzf kafka_2.12-3.8.0.tgz 
 
      cd kafka_2.12-3.8.0 
-2 - Zookeeper: if needed (skip as it should be already running)
+### 2 - Zookeeper: if needed (skip as it should be already running)
 
    **Start Zookeeper**: 
 
@@ -48,11 +48,11 @@ https://mum0-my.sharepoint.com/:p:/g/personal/mmostafa_miu_edu/EY2ie682y4lBtGOVI
 
 
 
-3 - Create Topic
+### 3 - Create Topic
 
  
 
-  ### Create a Topic and Test 
+  #### Create a Topic and Test 
 
   
 
@@ -69,26 +69,29 @@ https://mum0-my.sharepoint.com/:p:/g/personal/mmostafa_miu_edu/EY2ie682y4lBtGOVI
 
 
 
-4 - Start Kafka service
+### 4 - Start Kafka service
      bin/kafka-server-start.sh config/server.properties
 
 
 
-5 - Start Producer project as jar
+### 5 - Start Producer project as jar
      java -jar target/KafkaFinnhubProducer-1.0-SNAPSHOT.jar
 
-6 - Submit Consumer project as jar or run from the eclipse
+### 6 - Submit Consumer project as jar or run from the eclipse
 
-7 - Make sure sql view is created in Hive foor Tableau
+### 7 - Make sure sql view is created in Hive foor Tableau
 
       create view vm_stock_statistics2 AS
         select rowkey, cast(totalPrice as double), cast(totalVolume as double), timeStamp from hbase_stock_statistics ;
 
 
 
-8 - Refresh in Tableau project based on the connected IP (VM IP) to get latest view data using project "TableauBin.twb"
+### 8 - Refresh in Tableau project based on the connected IP (VM IP) to get latest view data using project "TableauBin.twb"
+      <img width="503" alt="image" src="https://github.com/user-attachments/assets/6334a789-5c2a-41bc-abe8-08bf8b8c3b4a">
+      ![Edit connection image] (/assets/images/tux.png)
+      
      
-9 - check results in Tableau
+### 9 - Check results in Tableau
 
 
 
