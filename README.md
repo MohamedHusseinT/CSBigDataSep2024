@@ -8,6 +8,7 @@
 
 **KafkaProducer:** Integrate with Finnhub API + listen topic + add stock object to topic
 
+**Tableau:** Visualization using Tableau for data from Hive using view
 
 **Presentation url:**
 https://mum0-my.sharepoint.com/:p:/g/personal/mmostafa_miu_edu/EY2ie682y4lBtGOVIPl2T2MBB6uJ8tC-NBITsC4uJtfZEA?email=mmukadam%40miu.edu&e=ZXSCZ1
