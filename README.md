@@ -79,14 +79,28 @@ https://mum0-my.sharepoint.com/:p:/g/personal/mmostafa_miu_edu/EY2ie682y4lBtGOVI
 
 ### 6 - Submit Consumer project as jar or run from the eclipse
 
-### 7 - Make sure sql view is created in Hive foor Tableau
+### 7 - Create hive table 
+
+      Drop table if exists hive_stock_table ;​
+
+		create external table hive_stock_table ​
+		    (key string,
+			totalePrice string, 
+			totalVolume string,​
+			timeStamp string) ​
+		stored by 'org.apache.hadoop.hive.hbase.HBaseStorageHandler' ​
+		with serdeproperties ("hbase.columns.mapping"=":key,stats:totalPrice,stats:totalVolume,stats:timeStamp") tblproperties ​
+		("hbase.table.name"="stock_statistics", "hbase.columns.mapping"=":key,stats:totalPrice,stats:totalVolume,stats:timeStamp");
+
+
+### 8 - Create hive view is created in Hive foor Tableau
 
       create view vm_stock_statistics2 AS
         select rowkey, cast(totalPrice as double), cast(totalVolume as double), timeStamp from hbase_stock_statistics ;
 
 
 
-### 8 - Refresh in Tableau project based on the connected IP (VM IP) to get latest view data using project "TableauBin.twb"
+### 9 - Refresh in Tableau project based on the connected IP (VM IP) to get latest view data using project "TableauBin.twb"
       <img width="503" alt="Edit Connection" src="https://github.com/user-attachments/assets/6334a789-5c2a-41bc-abe8-08bf8b8c3b4a">
       ![Edit connection image](/blob/main/Resources/Edit-Connection.png)
       ![Edit connection image](./blob/main/Resources/Edit-Connection.png)
@@ -95,7 +109,7 @@ https://mum0-my.sharepoint.com/:p:/g/personal/mmostafa_miu_edu/EY2ie682y4lBtGOVI
 
       
      
-### 9 - Check results in Tableau
+### 10 - Check results in Tableau
 
 
 
