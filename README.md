@@ -87,8 +87,12 @@ https://mum0-my.sharepoint.com/:p:/g/personal/mmostafa_miu_edu/EY2ie682y4lBtGOVI
 
 
 ### 8 - Refresh in Tableau project based on the connected IP (VM IP) to get latest view data using project "TableauBin.twb"
-      <img width="503" alt="image" src="https://github.com/user-attachments/assets/6334a789-5c2a-41bc-abe8-08bf8b8c3b4a">
-      ![Edit connection image] (/assets/images/tux.png)
+      <img width="503" alt="Edit Connection" src="https://github.com/user-attachments/assets/6334a789-5c2a-41bc-abe8-08bf8b8c3b4a">
+      ![Edit connection image](/blob/main/Resources/Edit-Connection.png)
+      ![Edit connection image](./blob/main/Resources/Edit-Connection.png)
+      ![Edit connection image](./Resources/Edit-Connection.png)
+      ![Edit connection image](Resources/Edit-Connection.png)
+
       
      
 ### 9 - Check results in Tableau
@@ -96,6 +100,15 @@ https://mum0-my.sharepoint.com/:p:/g/personal/mmostafa_miu_edu/EY2ie682y4lBtGOVI
 
 
 
+
+
+### Additional Configuration 
+
+- **Edit Config Files**: 
+
+  - You might need to edit `config/server.properties` and `config/zookeeper.properties` to adjust settings like `broker.id`, `log.dirs`, and `zookeeper.connect`. 
+
+  
 
 
 
