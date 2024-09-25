@@ -82,7 +82,9 @@ https://mum0-my.sharepoint.com/:p:/g/personal/mmostafa_miu_edu/EY2ie682y4lBtGOVI
  	Sample of received message in Consumer which already coming from used API (API documentation: https://finnhub.io/docs/api/websocket-trades)
  	{"data":[{"c":["1","12"],"p":191.9788,"s":"AMZN","t":1727107422666,"v":1},{"c":["1","12"],"p":191.9788,"s":"AMZN","t":1727107422666,"v":1},{"c":["1","12"],"p":191.9788,"s":"AMZN","t":1727107422666,"v":1},{"c":["1","12"],"p":191.9788,"s":"AMZN","t":1727107422666,"v":1}],"type":"trade"}
 
-	
+	Sample of database stored data:
+ 	<img width="1492" alt="image" src="https://github.com/user-attachments/assets/da24e925-e8d3-4164-91ad-f0a89320abee">
+
 
 ### 7 - Create hive table 
 
