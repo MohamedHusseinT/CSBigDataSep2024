@@ -85,6 +85,9 @@ https://mum0-my.sharepoint.com/:p:/g/personal/mmostafa_miu_edu/EY2ie682y4lBtGOVI
 	Sample of database stored data:
  	<img width="1492" alt="image" src="https://github.com/user-attachments/assets/da24e925-e8d3-4164-91ad-f0a89320abee">
 
+	Tables
+	<img width="375" alt="image" src="https://github.com/user-attachments/assets/d52094b4-2016-4405-9f24-b34c520f8bea">
+
 
 ### 7 - Create hive table 
 
