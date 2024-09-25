@@ -78,6 +78,11 @@ https://mum0-my.sharepoint.com/:p:/g/personal/mmostafa_miu_edu/EY2ie682y4lBtGOVI
      java -jar target/KafkaFinnhubProducer-1.0-SNAPSHOT.jar
 
 ### 6 - Submit Consumer project as jar or run from the eclipse
+	
+ 	Sample of received message in Consumer which already coming from used API (API documentation: https://finnhub.io/docs/api/websocket-trades)
+ 	{"data":[{"c":["1","12"],"p":191.9788,"s":"AMZN","t":1727107422666,"v":1},{"c":["1","12"],"p":191.9788,"s":"AMZN","t":1727107422666,"v":1},{"c":["1","12"],"p":191.9788,"s":"AMZN","t":1727107422666,"v":1},{"c":["1","12"],"p":191.9788,"s":"AMZN","t":1727107422666,"v":1}],"type":"trade"}
+
+	
 
 ### 7 - Create hive table 
 
@@ -123,7 +128,6 @@ https://mum0-my.sharepoint.com/:p:/g/personal/mmostafa_miu_edu/EY2ie682y4lBtGOVI
   - You might need to edit `config/server.properties` and `config/zookeeper.properties` to adjust settings like `broker.id`, `log.dirs`, and `zookeeper.connect`. 
 
   
-
 
 
 
